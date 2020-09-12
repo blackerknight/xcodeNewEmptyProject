@@ -12,9 +12,12 @@
 		6DA91374250D4591000A277B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA91372250D4591000A277B /* Main.storyboard */; };
 		6DA91376250D4595000A277B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DA91375250D4595000A277B /* Assets.xcassets */; };
 		6DA91379250D4595000A277B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA91377250D4595000A277B /* LaunchScreen.storyboard */; };
+		B893AEC70F68F37623A52939 /* Pods_Registrator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D980DF3031391BB97190DBC /* Pods_Registrator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		578E1ADED531062F2F688695 /* Pods-Registrator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Registrator.release.xcconfig"; path = "Target Support Files/Pods-Registrator/Pods-Registrator.release.xcconfig"; sourceTree = "<group>"; };
+		5D980DF3031391BB97190DBC /* Pods_Registrator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Registrator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA91369250D4591000A277B /* Registrator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Registrator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA9136C250D4591000A277B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DA91370250D4591000A277B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		6DA91375250D4595000A277B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DA91378250D4595000A277B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DA9137A250D4595000A277B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F57E8F7C5417D2FC62F39CA /* Pods-Registrator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Registrator.debug.xcconfig"; path = "Target Support Files/Pods-Registrator/Pods-Registrator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B893AEC70F68F37623A52939 /* Pods_Registrator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		077DA76ADC538F95FBF7E720 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D980DF3031391BB97190DBC /* Pods_Registrator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6DA91360250D4591000A277B = {
 			isa = PBXGroup;
 			children = (
 				6DA9136B250D4591000A277B /* Registrator */,
 				6DA9136A250D4591000A277B /* Products */,
+				A2AA175216A23DC740BD26B4 /* Pods */,
+				077DA76ADC538F95FBF7E720 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,16 @@
 			path = Registrator;
 			sourceTree = "<group>";
 		};
+		A2AA175216A23DC740BD26B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F57E8F7C5417D2FC62F39CA /* Pods-Registrator.debug.xcconfig */,
+				578E1ADED531062F2F688695 /* Pods-Registrator.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +96,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DA9137D250D4595000A277B /* Build configuration list for PBXNativeTarget "Registrator" */;
 			buildPhases = (
+				6026A94CD6F43378CBF28E73 /* [CP] Check Pods Manifest.lock */,
 				6DA91365250D4591000A277B /* Sources */,
 				6DA91366250D4591000A277B /* Frameworks */,
 				6DA91367250D4591000A277B /* Resources */,
@@ -129,6 +155,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6026A94CD6F43378CBF28E73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Registrator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6DA91365250D4591000A277B /* Sources */ = {
@@ -278,6 +329,7 @@
 		};
 		6DA9137E250D4595000A277B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F57E8F7C5417D2FC62F39CA /* Pods-Registrator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +349,7 @@
 		};
 		6DA9137F250D4595000A277B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 578E1ADED531062F2F688695 /* Pods-Registrator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
