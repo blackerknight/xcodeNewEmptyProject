@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D24180C250F225E00978244 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D24180B250F225E00978244 /* Alamofire.framework */; };
 		6DA9136D250D4591000A277B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9136C250D4591000A277B /* AppDelegate.swift */; };
 		6DA91371250D4591000A277B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA91370250D4591000A277B /* ViewController.swift */; };
 		6DA91374250D4591000A277B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA91372250D4591000A277B /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D24180B250F225E00978244 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		6DA91369250D4591000A277B /* Registrator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Registrator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA9136C250D4591000A277B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DA91370250D4591000A277B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +31,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D24180C250F225E00978244 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D24180A250F225E00978244 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D24180B250F225E00978244 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6DA91360250D4591000A277B = {
 			isa = PBXGroup;
 			children = (
 				6DA9136B250D4591000A277B /* Registrator */,
 				6DA9136A250D4591000A277B /* Products */,
+				6D24180A250F225E00978244 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,22 +153,12 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/ios/RxFlow.framework",
-				"$(SRCROOT)/Carthage/Build/ios/RxRelay.framework",
-				"$(SRCROOT)/Carthage/Build/ios/RxSwift.framework",
-				"$(SRCROOT)/Carthage/Build/ios/RxTest.framework",
-				"$(SRCROOT)/Carthage/Build/ios/RxCocoa.framework",
-				"$(SRCROOT)/Carthage/Build/ios/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/ios/Alamofire.framework",
 			);
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxFlow.framework",
-				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxRelay.framework",
-				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
-				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxTest.framework",
-				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
-				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxBlocking.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -333,6 +335,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7XG3ZS46L8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Registrator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -352,6 +358,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7XG3ZS46L8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Registrator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
