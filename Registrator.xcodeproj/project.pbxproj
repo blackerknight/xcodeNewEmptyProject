@@ -74,6 +74,8 @@
 				6DA91365250D4591000A277B /* Sources */,
 				6DA91366250D4591000A277B /* Frameworks */,
 				6DA91367250D4591000A277B /* Resources */,
+				6D241808250F18E800978244 /* ShellScript */,
+				6D241809250F1A9700978244 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,6 +131,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D241808250F18E800978244 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/ios/RxFlow.framework",
+				"$(SRCROOT)/Carthage/Build/ios/RxRelay.framework",
+				"$(SRCROOT)/Carthage/Build/ios/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/ios/RxTest.framework",
+				"$(SRCROOT)/Carthage/Build/ios/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/ios/RxBlocking.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxFlow.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxRelay.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxTest.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxBlocking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		6D241809250F1A9700978244 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage outdated --xcode-warnings\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6DA91365250D4591000A277B /* Sources */ = {
